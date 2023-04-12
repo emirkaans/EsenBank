@@ -46,46 +46,59 @@
     <main>
       <div class="container">
         <div class="left-side">
-          <h2>Hesap Hareketleri</h2>
-          <div class="movement">
-            <h4>21/05/2022</h4>
-            <p>- $50</p>
-          </div>
-          <div class="movement">
-            <h4>19/05/2022</h4>
-            <p>+ $150</p>
-          </div>
-          <div class="movement">
-            <h4>16/05/2022</h4>
-            <p>- $75</p>
-          </div>
+          <h2 id="welcome-msg">Hoşgeldin Emir</h2>
+          <h2 id="header-movements">Hesap Hareketleri</h2>
+          <ul class="account-movements">
+            <li>
+              <span class="date">12/04/2023</span>
+              <span class="description">Gelen</span>
+              <span class="amount">+ 500.00₺</span>
+            </li>
+            <li>
+              <span class="date">10/04/2023</span>
+              <span class="description">Giden</span>
+              <span class="amount">- 200.00₺</span>
+            </li>
+          </ul>
         </div>
         <div class="right-side">
           <div class="account-balance">
             <h2>Hesap Bakiyesi</h2>
-            <p>$1,025.00</p>
+            <span class="balance">1,200.00₺</span>
           </div>
-          <div class="transfer">
-            <h2>Transfer</h2>
+          <div class="deposit-section">
+            <h2>Para Yatır</h2>
             <form>
-              <div class="form-group">
-                <label for="user">Kullanıcı</label>
-                <input
-                  type="text"
-                  id="user"
-                  name="user"
-                  placeholder="Enter user"
-                />
-              </div>
-              <div class="form-group">
-                <label for="amount">Miktar</label>
-                <input
-                  type="text"
-                  id="amount"
-                  name="amount"
-                  placeholder="Enter amount"
-                />
-              </div>
+              <label for="deposit-amount">Miktar:</label>
+              <input
+                type="text"
+                id="deposit-amount"
+                name="deposit-amount"
+                placeholder="0.00₺"
+                required
+              />
+              <button type="submit">Yatır</button>
+            </form>
+          </div>
+          <div class="transfer-section">
+            <h2>Havale</h2>
+            <form>
+              <label for="transfer-user">Kullanıcı:</label>
+              <input
+                type="text"
+                id="transfer-user"
+                name="transfer-user"
+                placeholder="Kullanıcı"
+                required
+              />
+              <label for="transfer-amount">Miktar:</label>
+              <input
+                type="text"
+                id="transfer-amount"
+                name="transfer-amount"
+                placeholder="0.00₺"
+                required
+              />
               <button type="submit">Gönder</button>
             </form>
           </div>
@@ -100,9 +113,9 @@
           <ul>
             <li><a href="#">Yasal Uyarı</a></li>
             <li><a href="#">Güvenlik</a></li>
-            <li><a href="#">Gizlilik Politikamız</a></li>
-            <li><a href="#">Kişisel Verilerin Korunması</a></li>
-            <li><a href="#">Bilgi Toplumu Hizmetleri</a></li>
+            <li><a href="#">Gizlilik</a></li>
+            <!-- <li><a href="#">Kişisel Verilerin Korunması</a></li>
+            <li><a href="#">Bilgi Toplumu Hizmetleri</a></li> -->
           </ul>
         </nav>
       </div>
