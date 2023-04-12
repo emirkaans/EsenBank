@@ -11,7 +11,8 @@
   <body>
     <header>
       <div class="top-sections">
-        <a href="">Kampanyalar</a>
+        <a href="">Ana Sayfa</a>
+
         <a href="">Bankamız</a>
         <a href="">İletişim</a>
       </div>
@@ -44,9 +45,68 @@
     </header>
 
     <main>
-      <div class="container"></div>
+      <div class="container">
+        <div class="left-side">
+          <h2>Hesap Hareketleri</h2>
+          <div class="movement">
+            <h4>21/05/2022</h4>
+            <p>- $50</p>
+          </div>
+          <div class="movement">
+            <h4>19/05/2022</h4>
+            <p>+ $150</p>
+          </div>
+          <div class="movement">
+            <h4>16/05/2022</h4>
+            <p>- $75</p>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="account-balance">
+            <h2>Hesap Bakiyesi</h2>
+            <p>$1,025.00</p>
+          </div>
+          <div class="transfer">
+            <h2>Transfer</h2>
+            <form>
+              <div class="form-group">
+                <label for="user">Kullanıcı</label>
+                <input
+                  type="text"
+                  id="user"
+                  name="user"
+                  placeholder="Enter user"
+                />
+              </div>
+              <div class="form-group">
+                <label for="amount">Miktar</label>
+                <input
+                  type="text"
+                  id="amount"
+                  name="amount"
+                  placeholder="Enter amount"
+                />
+              </div>
+              <button type="submit">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <p>© 2023 Marul Bank A.Ş.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Yasal Uyarı</a></li>
+            <li><a href="#">Güvenlik</a></li>
+            <li><a href="#">Gizlilik Politikamız</a></li>
+            <li><a href="#">Kişisel Verilerin Korunması</a></li>
+            <li><a href="#">Bilgi Toplumu Hizmetleri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
