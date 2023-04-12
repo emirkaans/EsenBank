@@ -14,7 +14,7 @@ body {
 
 /******** Header Section ********/
 .top-sections {
-  background-color: #01a000;
+  background-color: #333;
   height: 3rem;
   display: flex;
   justify-content: center;
@@ -100,27 +100,6 @@ body {
   color: #bbb;
 }
 
-.login__btn {
-  border: none;
-  font-size: 2.5rem;
-  color: black;
-  cursor: pointer;
-  transition: all 0.3s;
-  background: rgb(255, 255, 255);
-  border-radius: 2.5rem;
-  width: 5rem;
-  margin-right: 1.5rem;
-}
-
-.login__btn:hover,
-.login__btn:focus,
-.btn--sort:hover,
-.btn--sort:focus {
-  outline: none;
-  color: white;
-  background-color: orange;
-}
-
 /******* Main Section ******/
 
 .container {
@@ -135,7 +114,7 @@ body {
   width: 85%;
   margin: auto;
   margin-top: 2rem;
-  margin-buttom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .left-side {
@@ -198,11 +177,17 @@ body {
 }
 
 button[type="submit"] {
+  display: flex;
   background-color: orange;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  margin-right: 1.5rem;
+  width: 7rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4.5rem;
+  padding: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
