@@ -4,7 +4,9 @@
 
 const account1 = {
   owner: "Ayşe Yılmaz",
-  movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
+  movements: [
+    200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300, 1200, -3500, 900,
+  ],
   username: "ay",
   pin: 1111,
 
@@ -17,6 +19,9 @@ const account1 = {
     "2022-07-26T17:01:17.194Z",
     "2023-01-01T23:36:17.929Z",
     "2023-01-06T10:51:36.790Z",
+    "2023-02-26T17:01:17.194Z",
+    "2023-04-12T23:36:17.929Z",
+    "2023-04-13T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -24,7 +29,9 @@ const account1 = {
 
 const account2 = {
   owner: "Hüseyin Yaman",
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
+  movements: [
+    5000, 3400, -150, -790, -3210, -1000, 8500, -30, 200, 7000, -4000,
+  ],
   username: "hy",
   pin: 2222,
 
@@ -36,7 +43,10 @@ const account2 = {
     "2022-02-05T16:33:06.386Z",
     "2022-04-10T14:43:26.374Z",
     "2022-06-25T18:49:59.371Z",
-    "2023-07-26T12:01:20.894Z",
+    "2023-01-26T12:01:20.894Z",
+    "2023-03-26T17:01:17.194Z",
+    "2023-04-11T23:36:17.929Z",
+    "2023-04-12T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -44,7 +54,9 @@ const account2 = {
 
 const account3 = {
   owner: "Berk Koçak",
-  movements: [3000, 3400, -150, -790, -3210, -1000, 18500, -30],
+  movements: [
+    3000, 3400, -150, -790, -3210, -1000, 18500, -30, 900, 600, -2500,
+  ],
   username: "bk",
   pin: 3333,
 
@@ -57,6 +69,9 @@ const account3 = {
     "2022-04-10T14:43:26.374Z",
     "2022-06-25T18:49:59.371Z",
     "2023-07-26T12:01:20.894Z",
+    "2023-03-26T17:01:17.194Z",
+    "2023-04-11T23:36:17.929Z",
+    "2023-04-12T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -64,7 +79,9 @@ const account3 = {
 
 const account4 = {
   owner: "İrem Mutlu",
-  movements: [5000, 3400, -150, -790, -3210, -1000, 13500, -350],
+  movements: [
+    5000, 3400, -150, -790, -3210, -1000, 13500, -350, 600, -400, 250,
+  ],
   username: "im",
   pin: 4444,
 
@@ -77,6 +94,9 @@ const account4 = {
     "2022-04-10T14:43:26.374Z",
     "2022-06-25T18:49:59.371Z",
     "2023-07-26T12:01:20.894Z",
+    "2023-02-26T17:01:17.194Z",
+    "2023-03-11T23:36:17.929Z",
+    "2023-04-12T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -84,7 +104,9 @@ const account4 = {
 
 const account5 = {
   owner: "Eren Tekin",
-  movements: [5000, 3400, -150, -790, -3210, 11000, -8500, -30],
+  movements: [
+    5000, 3400, -150, -790, -3210, 11000, -8500, -30, 7000, -200, 300,
+  ],
   username: "et",
   pin: 5555,
 
@@ -97,6 +119,9 @@ const account5 = {
     "2022-04-10T14:43:26.374Z",
     "2022-06-25T18:49:59.371Z",
     "2023-07-26T12:01:20.894Z",
+    "2023-03-26T17:01:17.194Z",
+    "2023-04-11T23:36:17.929Z",
+    "2023-04-12T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -104,7 +129,9 @@ const account5 = {
 
 const account6 = {
   owner: "Barış Yüksel",
-  movements: [5000, -3400, -150, -790, -3210, -1000, 13600, -30],
+  movements: [
+    5000, -3400, -150, -790, -3210, -1000, 13600, -30, -5000, 2600, 2700,
+  ],
   username: "by",
   pin: 6666,
 
@@ -117,6 +144,9 @@ const account6 = {
     "2022-04-10T14:43:26.374Z",
     "2022-06-25T18:49:59.371Z",
     "2023-07-26T12:01:20.894Z",
+    "2023-03-26T17:01:17.194Z",
+    "2023-04-09T23:36:17.929Z",
+    "2023-04-13T10:51:36.790Z",
   ],
   currency: "TRY",
   locale: "tr-TR",
@@ -126,6 +156,7 @@ const accounts = [account1, account2, account3, account4, account5, account6];
 
 /////// Elements ////////////////
 const body = document.querySelector(".body");
+const mainApp = document.querySelector(".main-app");
 const accountsInfo = document.querySelector(".accounts-info");
 
 const labelBalance = document.querySelector(".balance");
@@ -205,6 +236,7 @@ const calcDisplayBalance = function (acc) {
 const updateUI = function (acc) {
   // Remove Accounts Info
   accountsInfo.remove();
+
   // Display movements
   displayMovements(acc);
 
