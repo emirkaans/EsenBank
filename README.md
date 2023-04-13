@@ -2,7 +2,7 @@
 EsenBank, basit bir sanal bankacılık uygulamasıdır. Tanımlanmış 6 farklı hesap ile sisteme giriş yaparak bakiye bilgilerini görüntüleyebilir, para yatırma ve diğer tanımlı hesaplara havale işlemleri gerçekleştirilebilirsiniz.
 
 ## Kullanım
-Uygulamaya erişmek için [buraya](https://marulbank.netlify.app/) tıklayabilirsiniz.
+Uygulamaya erişmek için [buraya](https://esenbank.netlify.app/) tıklayabilirsiniz.
 
 Sisteme giriş yapmak için aşağıdaki hesapları kullanabilirsiniz. 
 | Kullanıcı İsmi | Şifre |
