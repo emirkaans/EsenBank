@@ -122,6 +122,28 @@ body {
 
 /******* Main Section ******/
 
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 6rem auto;
+  font-size: 1.2rem;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #ccc;
+}
+
+.app {
+  opacity: 0;
+  transition: all 1s;
+}
 .container {
   width: 75%;
   margin: 2rem auto;
@@ -182,7 +204,14 @@ body {
 
 .amount {
   font-size: 1.3rem;
+}
+
+.amount-deposit {
   color: green;
+}
+
+.amount-withdrawal {
+  color: red;
 }
 
 .right-side {
@@ -341,5 +370,9 @@ nav a {
 
   .right-side {
     width: 50%;
+  }
+
+  table {
+    margin: 4rem auto;
   }
 }
