@@ -152,9 +152,9 @@ const formatMovementDate = function (date, locale) {
 
   const daysPassed = calcDaysPassed(new Date(), date);
 
-  if (daysPassed === 0) return "Today";
-  if (daysPassed === 1) return "Yesterday";
-  if (daysPassed <= 7) return `${daysPassed} days ago`;
+  if (daysPassed === 0) return "Bugün";
+  if (daysPassed === 1) return "Dün";
+  if (daysPassed <= 7) return `${daysPassed} gün önce`;
 
   return new Intl.DateTimeFormat(locale).format(date);
 };
