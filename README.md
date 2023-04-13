@@ -4,7 +4,7 @@ MarulBank, basit bir sanal bankacılık uygulamasıdır. Tanımlanmış 6 farkl�
 ## Kullanım
 Uygulamaya erişmek için [buraya](https://marulbank.netlify.app/) tıklayabilirsiniz.
 
-Sisteme giriş yapmak için web sayfasındaki ve aşağıdaki hesapları kullanabilirsiniz. 
+Sisteme giriş yapmak için aşağıdaki hesapları kullanabilirsiniz. 
 | Kullanıcı İsmi | Şifre |
 | --- | --- |
 | ay | 1111 |
