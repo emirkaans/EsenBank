@@ -122,11 +122,17 @@ body {
 
 /******* Main Section ******/
 
+/*** Table ***/
+
 table {
   width: 80%;
-  border-collapse: collapse;
   margin: 6rem auto;
   font-size: 1.2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+  border-radius: 1.2rem 1.2rem 0 0;
+  overflow: hidden;
 }
 
 th,
@@ -139,6 +145,14 @@ td {
 th {
   background-color: rgb(207, 203, 255);
 }
+
+tbody tr:hover {
+  background-color: #ffff99;
+  color: purple;
+  cursor: pointer;
+}
+
+/**** App ****/
 
 .app {
   opacity: 0;
