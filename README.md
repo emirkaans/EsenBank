@@ -1,5 +1,3 @@
-# https://marulbank.netlify.app/
-
 # MarulBank
 MarulBank, basit bir sanal bankacılık uygulamasıdır. 6 farklı hesap tanımlanmıştır ve sisteme bu hesaplarla giriş yapılarak bakiye bilgileri görüntülenebilir, para yatırma ve para transferi işlemleri gerçekleştirilebilir.
 
