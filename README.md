@@ -15,4 +15,4 @@ Sisteme giriş yapmak için aşağıdaki hesapları kullanabilirsiniz.
 | by | 6666 |
 
 ## Katkıda Bulunma
-Önerileriniz varsa issue açarak veya bir pull request göndererek katkıda bulunabilirsiniz :hand:
+Önerileriniz varsa issue veya pull request aracılığıyla göndererek katkıda bulunabilirsiniz :hand:
