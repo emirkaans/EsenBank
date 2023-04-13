@@ -3,9 +3,9 @@
 /////////// Data ////////////
 
 const account1 = {
-  owner: "Bakiye Sema Sarıçam",
+  owner: "Ayşe Yılmaz",
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
-  username: "bss",
+  username: "ay",
   pin: 1111,
 
   movementsDates: [
@@ -23,9 +23,9 @@ const account1 = {
 };
 
 const account2 = {
-  owner: "Hakan Sarıçam",
+  owner: "Hüseyin Yaman",
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-  username: "hs",
+  username: "hy",
   pin: 2222,
 
   movementsDates: [
@@ -43,9 +43,9 @@ const account2 = {
 };
 
 const account3 = {
-  owner: "Umut Berkan Sarıçam",
+  owner: "Berk Koçak",
   movements: [3000, 3400, -150, -790, -3210, -1000, 18500, -30],
-  username: "ubs",
+  username: "bk",
   pin: 3333,
 
   movementsDates: [
@@ -63,9 +63,9 @@ const account3 = {
 };
 
 const account4 = {
-  owner: "İrem Pınar Sarıçam",
+  owner: "İrem Mutlu",
   movements: [5000, 3400, -150, -790, -3210, -1000, 13500, -350],
-  username: "ips",
+  username: "im",
   pin: 4444,
 
   movementsDates: [
@@ -83,9 +83,9 @@ const account4 = {
 };
 
 const account5 = {
-  owner: "Emir Kaan Sarıçam",
+  owner: "Eren Tekin",
   movements: [5000, 3400, -150, -790, -3210, 11000, -8500, -30],
-  username: "eks",
+  username: "et",
   pin: 5555,
 
   movementsDates: [
@@ -103,9 +103,9 @@ const account5 = {
 };
 
 const account6 = {
-  owner: "Yüksel Şule Cantekin",
+  owner: "Barış Yüksel",
   movements: [5000, -3400, -150, -790, -3210, -1000, 13600, -30],
-  username: "yşc",
+  username: "by",
   pin: 6666,
 
   movementsDates: [
@@ -224,7 +224,6 @@ btnLogin.addEventListener("click", function (e) {
   currentAccount = accounts.find(
     (acc) => acc.username === inputLoginUsername.value
   );
-  console.log(currentAccount);
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // Display UI and message
